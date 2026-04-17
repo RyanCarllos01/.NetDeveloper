@@ -1,0 +1,28 @@
+C:\.net developer\bin\Debug\net10.0\.net developer.exe
+C:\.net developer\bin\Debug\net10.0\.net developer.deps.json
+C:\.net developer\bin\Debug\net10.0\.net developer.runtimeconfig.json
+C:\.net developer\bin\Debug\net10.0\.net developer.dll
+C:\.net developer\bin\Debug\net10.0\.net developer.pdb
+C:\.net developer\obj\Debug\net10.0\.net developer.GeneratedMSBuildEditorConfig.editorconfig
+C:\.net developer\obj\Debug\net10.0\.net developer.AssemblyInfoInputs.cache
+C:\.net developer\obj\Debug\net10.0\.net developer.AssemblyInfo.cs
+C:\.net developer\obj\Debug\net10.0\.net developer.csproj.CoreCompileInputs.cache
+C:\.net developer\obj\Debug\net10.0\.net developer.dll
+C:\.net developer\obj\Debug\net10.0\refint\.net developer.dll
+C:\.net developer\obj\Debug\net10.0\.net developer.pdb
+C:\.net developer\obj\Debug\net10.0\.net developer.genruntimeconfig.cache
+C:\.net developer\obj\Debug\net10.0\ref\.net developer.dll
+C:\NetDeveloper\bin\Debug\net10.0\.net developer.exe
+C:\NetDeveloper\bin\Debug\net10.0\.net developer.deps.json
+C:\NetDeveloper\bin\Debug\net10.0\.net developer.runtimeconfig.json
+C:\NetDeveloper\bin\Debug\net10.0\.net developer.dll
+C:\NetDeveloper\bin\Debug\net10.0\.net developer.pdb
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.AssemblyInfoInputs.cache
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.AssemblyInfo.cs
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.csproj.CoreCompileInputs.cache
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.dll
+C:\NetDeveloper\obj\Debug\net10.0\refint\.net developer.dll
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.pdb
+C:\NetDeveloper\obj\Debug\net10.0\.net developer.genruntimeconfig.cache
+C:\NetDeveloper\obj\Debug\net10.0\ref\.net developer.dll

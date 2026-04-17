@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "C#: Depurar Arquivo Ativo",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
