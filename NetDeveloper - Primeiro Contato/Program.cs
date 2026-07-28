@@ -1,50 +1,153 @@
 ﻿//using NetDeveloper.Models;
 
 
+using System.Buffers;
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using Models;
 
-//menu interativo
+using System;
 
-string opcao;
-bool exibirMenu = true;
-while (exibirMenu)
+class Program
 {
-    Console.Clear();
-    Console.WriteLine("Digite a sua opção");
-    Console.WriteLine("1 - Cadastrar cliente");
-    Console.WriteLine("2 - Buscar Cliente");
-    Console.WriteLine("3 - Apagar cliente");
-    Console.WriteLine("4 - Encerrar");
-
-    opcao = Console.ReadLine();
-
-    switch(opcao)
+    static void Main(string[] args)
     {
-        case "1":
-        Console.WriteLine("Cadastro de cliente");
-        break;
-
-         case "2":
-        Console.WriteLine("Busca de cliente");
-        break;
-
-         case "3":
-        Console.WriteLine("Apagar cliente");
-        break;
-
-         case "4":
-        Console.WriteLine("Encerrar");
-        //Environment.Exit(0);
-        exibirMenu = false; // quando vou encerrar ele vai parar de exibir o menu
-        break;
         
-        default:
-        Console.WriteLine("Opção inválida");
-        break;
+        // Entrada dos valores
+        Console.WriteLine("Digite o saldo total da conta:");
+        int saldoTotal = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o valor do saque:");
+        int valorSaque = int.Parse(Console.ReadLine());
+
+        // Verificação do saque
+        if (saldoTotal >= valorSaque)
+        {
+            saldoTotal -= valorSaque;
+            Console.WriteLine($"Saque realizado com sucesso! Novo saldo: {saldoTotal}");
+        }
+        else
+        {
+            Console.WriteLine("Saldo insuficiente. Saque nao realizado!");
+        }
     }
 }
+// Criando uma lista de string
+
+// List<string> listaString = new List<string>();
+
+// listaString.Add("SP");
+// listaString.Add("BA");
+// listaString.Add("MG");
+// listaString.Add("RJ");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Add("SC");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Remove("MG");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// para acessar os itens da lista, tem o foreach ou o for
+// Console.WriteLine("Percorrendo o Array com FOR");
+// for(int contador = 0; contador < listaString.Count; contador++)
+// {
+//     Console.WriteLine($"Posição N° {contador} - {listaString[contador]}");
+// }
+// Console.WriteLine("Percorrendo o Array com FOREACH");
+// int contadorForeach = 0;
+// foreach(string item in listaString)
+// {
+//    Console.WriteLine($"Posição N° {contadorForeach} - {item}");
+//    contadorForeach++;
+// }
+
+//Implementando array de inteiros 
+
+// criamos um array de 3 posições
+// int[] arrayInteiros = new int[3];
+
+// // Implementando os valores de cada posição do array
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+
+// // pra sabermos até onde percorrer pelo array, só colocar o número da capacidade menos 1
+// // ou seja se couber 3 posições, a capacidade vai de 0 a 2, porque o 0 já conta como primeiro número
+
+// // como acessar os valores do array
+// // Lenght é a propriedade que retorna o tamanho do array
+
+// // Redimensionando o array usando o Array Resize, dobramos a capacidade do array, agora cabe 8 posições
+// // ele faz uma copia praticamente, e dobra a capacidade
+
+// // cria o array , e cria outro array novo, com uma nova capacidade e com os dados que foram copiados
+// int[] arrayInteirosDobrado = new int [arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// // Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+// Console.WriteLine("Percorrendo o Array com o FOR");
+// for(int contador =0; contador < arrayInteiros.Length; contador++)
+// {
+//    Console.WriteLine($"Posição N° {contador} - {arrayInteiros[contador]}");
+// }
+
+
+// usaremos o foreach. ele percorre o array inteiro, não precisa se preocupar com o contador,
+
+// Console.WriteLine("Percorrendo o Array com FOREACH");
+
+// int contadorForeach = 0;
+// foreach(int valor in arrayInteiros)
+// {
+//     Console.WriteLine($"Posição N° {contadorForeach} - {valor}");
+//     contadorForeach++;
+// }
+
+//menu interativo
+
+// string opcao;
+// bool exibirMenu = true;
+// while (exibirMenu)
+// {
+//     Console.Clear();
+//     Console.WriteLine("Digite a sua opção");
+//     Console.WriteLine("1 - Cadastrar cliente");
+//     Console.WriteLine("2 - Buscar Cliente");
+//     Console.WriteLine("3 - Apagar cliente");
+//     Console.WriteLine("4 - Encerrar");
+
+//     opcao = Console.ReadLine();
+
+//     switch(opcao)
+//     {
+//         case "1":
+//         Console.WriteLine("Cadastro de cliente");
+//         break;
+
+//          case "2":
+//         Console.WriteLine("Busca de cliente");
+//         break;
+
+//          case "3":
+//         Console.WriteLine("Apagar cliente");
+//         break;
+
+//          case "4":
+//         Console.WriteLine("Encerrar");
+//         //Environment.Exit(0);
+//         exibirMenu = false; // quando vou encerrar ele vai parar de exibir o menu
+//         break;
+        
+//         default:
+//         Console.WriteLine("Opção inválida");
+//         break;
+//     }
+// }
 
 
 
@@ -76,10 +179,6 @@ while (exibirMenu)
 // // }
 // }
 
-
-
-
-
 // vamos fazer contar tabuada do 5 
 // int numero = 5;
 
@@ -87,16 +186,6 @@ while (exibirMenu)
 // {
 //     Console.WriteLine($"{numero} X {contador} = {numero * contador}");
 // }
-
-
-
-
-
-
-
-
-
-
 
 
 // Calculadora calc = new Calculadora();
@@ -261,13 +350,6 @@ else
 }
 
 */
-
-
-
-
-
-
-
 
 // // convertendo de maneira segura
 // string a = "15-";
