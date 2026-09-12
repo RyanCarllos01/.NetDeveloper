@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net10.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/8b5be0e3-d6e9-4f80-8e03-33195e601a14/resourceGroups/bancodedados/providers/Microsoft.Web/sites/sistemamvcdio"
+}
