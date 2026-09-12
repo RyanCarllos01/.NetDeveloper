@@ -1,0 +1,6 @@
+@NewApiAzureTables_HostAddress = http://localhost:5181
+
+GET {{NewApiAzureTables_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
